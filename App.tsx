@@ -22,7 +22,7 @@ const App = () => {
   const [data, setData] = useState<any[]>([]);
 
   const api = {
-    key:'07d45cb17a2a1948498dd91ff9a0bc43',
+    key:'${openweathermapToken}',
     baseUrl:'https://api.openweathermap.org/data/2.5/',
   }
 
