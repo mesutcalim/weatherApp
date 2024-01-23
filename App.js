@@ -7,6 +7,7 @@
 
 import React,{useState,useCallback} from 'react';
 import axios from 'axios';
+import styles from './'
 import {
   StyleSheet,
   Text,
@@ -19,7 +20,7 @@ import {
 const App = () => {
   const [input,setInput] = useState("");
   const [loading, setLoading] = useState(false);
-  const [data, setData] = useState<any[]>([]);
+  const [data, setData] = useState([]);
 
   const api = {
     key:'${openweathermapToken}',
@@ -76,49 +77,6 @@ const App = () => {
   );
 };
 
-const styles = StyleSheet.create({
-  root: {
-    flex: 1,
-  },
-  image: {
-    flex: 1,
-    flexDirection: 'column',
-  },
-  textInput:{
-    borderBottomWidth:3,
-    padding: 5,
-    paddingVertical:20,
-    marginHorizontal:10,
-    marginVertical:100,
-    backgroundColor:'#fff',
-    fontSize: 19,
-    borderRadius: 16,
-    borderBottomColor:'#df8e00',
-  },
-  infoView:{
-    alignItems:'center',
-  },
-  cityCountryText:{
-    color:'#fff',
-    fontSize:40,
-    fontWeight:'bold',
-  },
-  dateText:{
-    color: '#fff',
-    fontSize: 22,
-    marginVertical:10,
-  },
-  tempText:{
-    fontSize:45,
-    color:'#fff',
-    marginVertical:10,
-  },
-  minMaxText:{
-    fontSize:22,
-    color:'#fff',
-    marginVertical:10,
-    fontWeight:'500',
-  },
-});
+
 
 export default App;

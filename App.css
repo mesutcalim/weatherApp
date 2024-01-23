@@ -1,0 +1,42 @@
+
+    root{
+      flex: 1;
+    }
+    image {
+      flex: 1;
+      flex-direction: column;
+    }
+    textInput{
+      border-bottom-width:3;
+      padding: 5px;
+      padding:20px;
+      margin:10px 100px;
+      backgroundColor:'#fff';
+      fontSize: 19;
+      borderRadius: 16;
+      borderBottomColor:'#df8e00';
+    }
+    infoView{
+      alignItems:'center';
+    }
+    cityCountryText{
+      color:'#fff';
+      fontSize:40;
+      fontWeight:'bold';
+    }
+    dateText:{
+      color: '#fff';
+      fontSize: 22;
+      marginVertical:10;
+    }
+    tempText:{
+      fontSize:45;
+      color:'#fff';
+      marginVertical:10;
+    }
+    minMaxText:{
+      fontSize:22;
+      color:'#fff';
+      marginVertical:10;
+      fontWeight:'500';
+    }
