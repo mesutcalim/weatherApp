@@ -67,7 +67,7 @@ const App = () => {
               </Text>
               <Text style={styles.dateText}>{new Date().toLocaleString()}</Text>
               <Text style={styles.tempText}>{`${Math.round(data?.main?.temp)} °C`}</Text>
-              <Text style={styles.minMaxTemp}>{`Min ${Math.round(data?.main?.temp_min)} °C / Max ${Math.round(data?.main?.temp_max)} °C`}</Text>
+              <Text style={styles.minMaxText}>{`Min ${Math.round(data?.main?.temp_min)} °C / Max ${Math.round(data?.main?.temp_max)} °C`}</Text>
             </View>
           )}
 
