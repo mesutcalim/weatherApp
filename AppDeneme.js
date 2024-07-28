@@ -18,7 +18,7 @@ export default function App() {
     useEffect(() => {
         if (city) {
             axios(
-                `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${api.key}&units=metric`
+                `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${api.key}&units=metric&lang=tr`
             )
                 .then((res) => {
                     const newArray = res.data.list.splice(0, 7);
@@ -29,7 +29,7 @@ export default function App() {
                 position => {
                     const {latitude, longitude} = position.coords;
                     axios(
-                        `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&cnt=7&appid=${api.key}&units=metric`
+                        `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&cnt=7&appid=${api.key}&units=metric&lang=tr`
                     )
                         .then((res) => {
                             const newArray = res.data.list.splice(0, 7);
